@@ -1,4 +1,6 @@
 import React from 'react'
+import dissapointment from "../assets/dissapointment.png"
+import happy from "../assets/happy.png"
 
 function Scores({score, length}) {
     const styles = {
@@ -8,7 +10,7 @@ function Scores({score, length}) {
     
   return (
     <div className='test-details' style={styles}>
-    <img  src={score < 5? "./src/assets/dissapointment.png" : "./src/assets/happy.png"} alt='' />
+    <img  src={score < 5? dissapointment : happy} alt='' />
       <h3>You scored {score} out of {length}.</h3>
       <p>Refresh the page to retake the test</p>
     </div>
